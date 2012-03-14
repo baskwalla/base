@@ -13,7 +13,7 @@ https://github.com/jonikorpi/Golden-Grid-System/blob/master/GGS.css
 
 http://jonikorpi.com/leaving-old-IE-behind/
 
-https://github.com/csswizardry/CSS-Guidelines/blob/master/CSS Guidelines.md
+https://github.com/csswizardry/CSS-Guidelines/blob/master/CSS%20Guidelines.md
 
 https://github.com/twitter/bootstrap/blob/master/less/responsive.less
 
