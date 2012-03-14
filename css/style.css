@@ -243,8 +243,8 @@ html {
 /* line 74, ../sass/includes/_typography.sass */
 body {
   margin: 0;
-  font: 18px/24px adobe-text-pro, georgia, serif;
-  font: 1.8rem/2.4rem adobe-text-pro, georgia, serif;
+  font: 16px/24px adobe-text-pro, georgia, serif;
+  font: 1.6rem/2.4rem adobe-text-pro, georgia, serif;
   font-weight: 400;
 }
 
@@ -288,19 +288,23 @@ nav ul, nav ol {
 }
 
 /* line 111, ../sass/includes/_typography.sass */
-h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma {
-  color: #ff3300;
+h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, small, .milli, p, blockquote {
   font-weight: 400;
 }
 
-/* line 116, ../sass/includes/_typography.sass */
+/* line 114, ../sass/includes/_typography.sass */
+h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma {
+  color: #ff3300;
+}
+
+/* line 117, ../sass/includes/_typography.sass */
 h1, .alpha {
   font: 36px/42px futura-pt, helvetica, sans-serif;
   font: 3.6rem/4.2rem futura-pt, helvetica, sans-serif;
   margin: 0px 0px 12px 0px;
 }
 
-/* line 121, ../sass/includes/_typography.sass */
+/* line 122, ../sass/includes/_typography.sass */
 h1.subhead {
   font: italic 24px/24px adobe-text-pro, georgia, serif;
   font: italic 2.4rem/2.4rem adobe-text-pro, georgia, serif;
@@ -310,7 +314,7 @@ h1.subhead {
   text-transform: uppercase;
 }
 
-/* line 129, ../sass/includes/_typography.sass */
+/* line 130, ../sass/includes/_typography.sass */
 h2, .beta {
   font: 30px/36px futura-pt, helvetica, sans-serif;
   font: 3rem/3.6rem futura-pt, helvetica, sans-serif;
@@ -318,7 +322,7 @@ h2, .beta {
   margin-top: 12px;
 }
 
-/* line 135, ../sass/includes/_typography.sass */
+/* line 136, ../sass/includes/_typography.sass */
 h3, .gamma {
   font: 24px/30px futura-pt, helvetica, sans-serif;
   font: 2.4rem/3rem futura-pt, helvetica, sans-serif;
@@ -326,7 +330,7 @@ h3, .gamma {
   margin-top: 12px;
 }
 
-/* line 147, ../sass/includes/_typography.sass */
+/* line 148, ../sass/includes/_typography.sass */
 small, .milli {
   font: 14px/18px adobe-text-pro, georgia, serif;
   font: 1.4rem/1.8rem adobe-text-pro, georgia, serif;
@@ -338,7 +342,7 @@ small, .milli {
   text-transform: uppercase;
 }
 
-/* line 157, ../sass/includes/_typography.sass */
+/* line 158, ../sass/includes/_typography.sass */
 p {
   font: 18px/24px adobe-text-pro, georgia, serif;
   font: 1.8rem/2.4rem adobe-text-pro, georgia, serif;
@@ -348,7 +352,7 @@ p {
   margin-top: 0px;
 }
 
-/* line 165, ../sass/includes/_typography.sass */
+/* line 166, ../sass/includes/_typography.sass */
 blockquote {
   font: italic 21px/24px adobe-text-pro, georgia, serif;
   font: italic 2.1rem/2.4rem adobe-text-pro, georgia, serif;
