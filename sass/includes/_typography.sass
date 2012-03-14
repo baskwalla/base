@@ -1,0 +1,173 @@
+// Typography styling here
+
+// Colors
+$heading: #ff3300
+$subheading: #00cc99
+$text: #222
+$small: #009900
+$a-hover: #0066cc
+$a-link: #0066cc
+$a-visited: #990099
+$color-blockquote: #009900
+$selection: #888
+$selection-font: #fff
+
+//Fonts
+$heading-style: futura-pt, helvetica, sans-serif
+$read-style: adobe-text-pro, georgia, serif
+
+// Normalization
+
+abbr[title]
+  border-bottom: 1px dotted
+
+b, strong
+  font-weight: bold
+
+blockquote
+  margin: 1em 40px
+
+dfn
+  font-style: italics
+
+hr
+  display: block
+  height: 1px
+  border: 0
+  border-top: 1px solid #ccc
+  margin: 1em 0
+  padding: 0
+
+pre, code, kbd, samp
+  font-family: monospace, serif
+  _font-family: 'courier new', monospace
+  font-size: 1em
+
+pre
+  white-space: pre
+  white-space: pre-wrap
+  word-wrap: break-word
+
+small
+  font-size: 85%
+
+sub, sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+
+sup
+  top: -0.5em
+
+sub
+  bottom: -0.25em
+
+// Base
+
+html 
+  font-size: 62.5%
+  overflow-y: scroll 
+  -webkit-text-size-adjust: 100% 
+  -ms-text-size-adjust: 100%
+
+body
+  margin: 0
+  font: 18px/24px $read-style
+  font: 1.8rem/2.4rem $read-style
+  font-weight: 400
+
+body, button, input, select, textarea 
+  font-family: $read-style
+  color: $text
+
+::-moz-selection
+  background: $selection
+  color: $selection-font
+  text-shadow: none
+
+::selection
+  background: $selection
+  color: $selection-font
+  text-shadow: none
+
+// Lists
+
+ul, ol
+  margin: 1em 0
+  padding: 0 0 0 40px
+
+dd
+  margin: 0 0 0 40px
+
+nav ul, nav ol
+  list-style: none
+  list-style-image: none
+  margin: 0
+  padding: 0
+
+// Font Sizes
+
+h1, .alpha
+  font: 36px/42px $heading-style
+  font: 3.6rem/4.2rem $heading-style
+  margin: 0px 0px 12px 0px
+  font-weight: 400
+  color: $heading
+
+h1.subhead
+  font: italic 24px/24px $read-style
+  font: italic 2.4rem/2.4rem $read-style
+  font-weight: 400
+  margin-bottom: 12px
+  margin-top: 0px
+  color: $subheading
+  text-transform: uppercase
+
+h2, .beta
+  font: 30px/36px $heading-style
+  font: 3rem/3.6rem $heading-style
+  margin-bottom: 6px
+  margin-top: 12px
+  font-weight: 400
+  color: $heading
+
+h3, .gamma
+  font: 24px/30px $heading-style
+  font: 2.4rem/3rem $heading-style
+  font-weight: 400
+  margin-bottom: 6px 
+  margin-top: 12px
+  color: $heading
+
+.giga
+
+.mega
+
+.kilo
+
+small, .milli
+  font: 14px/18px $read-style
+  font: 1.4rem/1.8rem $read-style
+  font-weight: 400
+  letter-spacing: 1px
+  margin-bottom: 18px
+  margin-top: 0px
+  color: $small
+  text-transform: uppercase
+
+p
+  font: 18px/24px $read-style
+  font: 1.8rem/2.4rem $read-style
+  font-style: normal
+  font-weight: 400
+  margin-bottom: 18px
+  margin-top: 0px
+
+blockquote
+  font: italic 21px/24px $read-style
+  font: italic 2.1rem/2.4rem $read-style
+  margin-bottom: 18px
+  margin-top: 18px
+  font-weight: 400
+  color: $color-blockquote
