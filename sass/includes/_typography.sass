@@ -108,17 +108,19 @@ nav ul, nav ol
 
 // Font Sizes
 
+#{headings()}, .alpha, .beta, .gamma
+  color: $heading
+  font-weight: 400
+
+
 h1, .alpha
   font: 36px/42px $heading-style
   font: 3.6rem/4.2rem $heading-style
   margin: 0px 0px 12px 0px
-  font-weight: 400
-  color: $heading
 
 h1.subhead
   font: italic 24px/24px $read-style
   font: italic 2.4rem/2.4rem $read-style
-  font-weight: 400
   margin-bottom: 12px
   margin-top: 0px
   color: $subheading
@@ -129,16 +131,12 @@ h2, .beta
   font: 3rem/3.6rem $heading-style
   margin-bottom: 6px
   margin-top: 12px
-  font-weight: 400
-  color: $heading
 
 h3, .gamma
   font: 24px/30px $heading-style
   font: 2.4rem/3rem $heading-style
-  font-weight: 400
   margin-bottom: 6px 
   margin-top: 12px
-  color: $heading
 
 .giga
 
