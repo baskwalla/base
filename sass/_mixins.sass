@@ -555,3 +555,28 @@
   @else if $media == tablet
     @media screen and (max-width: 1000px)
       @content
+
+// Rem Conversion
+// https://github.com/bitmanic/rem
+$baseline-px: 10px
+
+=rem($property, $px-values)
+  $baseline-rem: $baseline-px / 1rem
+  
+  #{$property}: $px-values
+  
+  @if type-of($px-values) == "number"
+    #{$property}: $px-values / $baseline-rem
+  @else
+
+    $rem-values: unquote("")
+
+    @each $value in $px-values
+      
+      @if $value == 0
+        $rem-values: append($rem-values, $value)
+
+      @else
+        $rem-values: append($rem-values, $value / $baseline-rem)
+
+    #{$property}: $rem-values
