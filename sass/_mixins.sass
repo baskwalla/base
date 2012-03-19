@@ -65,7 +65,7 @@
 // Placeholder text
 // -------------------------
 @mixin placeholder($color: $placeholderText)
-  :-moz-placeholder
+  ":-moz-placeholder"
     color: $color
   ::-webkit-input-placeholder
     color: $color
@@ -125,7 +125,7 @@
 
 // Le grid system
 // -------------------------
-@mixin gridSystem-columns ($gridGutterWidth, $gridColumnWidth, $gridRowWidth, $columns) {
+@mixin gridSystem-columns ($gridGutterWidth, $gridColumnWidth, $gridRowWidth, $columns)
   width: ($gridColumnWidth * $columns) + ($gridGutterWidth * ($columns - 1))
 
 @mixin gridSystem-offset($gridColumnWidth, $gridGutterWidth, $columns)
@@ -427,7 +427,7 @@
 // Opacity
 @mixin opacity($opacity: 100)
   opacity: $opacity / 100
-   filter: alpha(opacity=$opacity)
+  filter: alpha(opacity=$opacity)
 
 
 
@@ -436,7 +436,7 @@
 
 // Add an alphatransparency value to any background or border color (via Elyse Holladay)
 @mixin translucent-background($color: $white, $alpha: 1)
-    background-color: hsla(hue($color), saturation($color), lightness($color), $alpha)
+  background-color: hsla(hue($color), saturation($color), lightness($color), $alpha)
 
 @mixin translucent-border($color: $white, $alpha: 1)
   border-color: hsla(hue($color), saturation($color), lightness($color), $alpha)
@@ -497,13 +497,13 @@
   // Opera cannot do radial gradients yet
 
 @mixin gradient-striped($color,$angle: -45deg)
-    background-color: $color
-    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent))
-    background-image: -webkit-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent)
-    background-image: -moz-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent)
-    background-image: -ms-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent)
-    background-image: -o-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent)
-    //background-image: linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent)
+  background-color: $color
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent))
+  background-image: -webkit-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent)
+  background-image: -moz-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent)
+  background-image: -ms-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent)
+  background-image: -o-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent)
+  //background-image: linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent)
 
 // Gradient Bar Colors for buttons and alerts
 @mixin gradientBar($primaryColor, $secondaryColor)
