@@ -95,7 +95,9 @@ nav ul, nav ol
   font-weight: 400
 
 #{headings()}, .alpha, .beta, .gamma
+  margin: 0
   color: $heading
+  text-rendering: optimizelegibility
 
 h1, .alpha
   font: 36px/42px $heading-style
@@ -131,7 +133,6 @@ h3, .gamma
 small, .milli
   font: 14px/18px $read-style
   font: 1.4rem/1.8rem $read-style
-  font-weight: 400
   letter-spacing: 1px
   margin-bottom: 18px
   margin-top: 0px
@@ -141,8 +142,6 @@ small, .milli
 p
   font: 18px/24px $read-style
   font: 1.8rem/2.4rem $read-style
-  font-style: normal
-  font-weight: 400
   margin-bottom: 18px
   margin-top: 0px
 
@@ -151,5 +150,4 @@ blockquote
   font: italic 2.1rem/2.4rem $read-style
   margin-bottom: 18px
   margin-top: 18px
-  font-weight: 400
   color: $color-blockquote
